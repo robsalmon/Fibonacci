@@ -1,0 +1,151 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{82EFFBFD-FAB5-4BCB-BEE0-7E4392A4CA3D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Fibonacci</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\03\40ad864be213afd3606dd6e89b8a5b9e366eaa" />
+    <None Include=".git\objects\0c\01d385a8b2162978dfe4a45fa5269215d72396" />
+    <None Include=".git\objects\0c\79a96bca70ebfc4f54e353f17be29ceecc10f5" />
+    <None Include=".git\objects\0e\3e388e6700063bdc99658e235d10c69a07c5d9" />
+    <None Include=".git\objects\1b\59d145abcb4588a59c6e4891bdcf5b0a8682c9" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\2b\abf4a0c454f159ce55da7e72c861d7bbd57625" />
+    <None Include=".git\objects\3c\4efe206bd0e7230ad0ae8396a3c883c8207906" />
+    <None Include=".git\objects\3e\17cdb0eaacbe9918abefbca8a0f371d7a47e84" />
+    <None Include=".git\objects\5e\32a4a27d12ceae1e018863aacbc57278c14104" />
+    <None Include=".git\objects\6f\f2c8db3d0333dd2d8d00284159b76e95e9905a" />
+    <None Include=".git\objects\7e\42dc6e97a4eea3c1e8284b78239c635193efeb" />
+    <None Include=".git\objects\8d\6e27c463adf577604de2795032b40d1a7f5f3d" />
+    <None Include=".git\objects\91\e3470e1645e6e8d0de6fe9f6b242f366e9a393" />
+    <None Include=".git\objects\95\032b4d56b5b2f263282e4edc9d4221c5881283" />
+    <None Include=".git\objects\98\6e3087cf02522e5fc520a32af94b8a00846a8d" />
+    <None Include=".git\objects\9c\c63a8792a02db11b8f6bfb8a3752e9f41ade14" />
+    <None Include=".git\objects\b0\28fabed5add13c693d597bca7aae490f463633" />
+    <None Include=".git\objects\be\e2c1afd687bc56aeac1bf20a68260e05600708" />
+    <None Include=".git\objects\d0\f87ab530bc4d777df2edb038239f3e147af6ff" />
+    <None Include=".git\objects\de\e4344e03173434a8d7a1db9b171868c23e3a03" />
+    <None Include=".git\objects\f0\3259659109eb261741bf165b0b5b4942575d34" />
+    <None Include=".git\objects\f9\d3e3b291c5fd75fc52ccfc304996780823d084" />
+    <None Include=".git\objects\fe\f9f00782f46a34ad3ffff5594b89e45dd50cf9" />
+    <None Include=".git\objects\ff\f69287a7ca2c0e39408f963bc0e00eae5fc68e" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vs\FibonacciTests\v15\.suo" />
+    <None Include="FibonacciProject.Tests\bin\Debug\netcoreapp1.1\FibonacciProject.Tests.deps.json" />
+    <None Include="FibonacciProject.Tests\bin\Debug\netcoreapp1.1\FibonacciProject.Tests.runtimeconfig.dev.json" />
+    <None Include="FibonacciProject.Tests\bin\Debug\netcoreapp1.1\FibonacciProject.Tests.runtimeconfig.json" />
+    <None Include="FibonacciProject.Tests\obj\Debug\netcoreapp1.1\CoreCompileInputs.cache" />
+    <None Include="FibonacciProject.Tests\obj\Debug\netcoreapp1.1\FibonacciProject.Tests.csprojResolveAssemblyReference.cache" />
+    <None Include="FibonacciProject.Tests\obj\FibonacciProject.Tests.csproj.nuget.g.props" />
+    <None Include="FibonacciProject.Tests\obj\FibonacciProject.Tests.csproj.nuget.g.targets" />
+    <None Include="FibonacciProject.Tests\obj\project.assets.json" />
+    <None Include="FibonacciProject\bin\Debug\netcoreapp1.1\FibonacciProject.deps.json" />
+    <None Include="FibonacciProject\obj\Debug\netcoreapp1.1\CoreCompileInputs.cache" />
+    <None Include="FibonacciProject\obj\Debug\netcoreapp1.1\FibonacciProject.csprojResolveAssemblyReference.cache" />
+    <None Include="FibonacciProject\obj\FibonacciProject.csproj.nuget.g.props" />
+    <None Include="FibonacciProject\obj\FibonacciProject.csproj.nuget.g.targets" />
+    <None Include="FibonacciProject\obj\project.assets.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="FibonacciProject.Tests\bin\Debug\netcoreapp1.1\FibonacciProject.dll" />
+    <Content Include="FibonacciProject.Tests\bin\Debug\netcoreapp1.1\FibonacciProject.pdb" />
+    <Content Include="FibonacciProject.Tests\bin\Debug\netcoreapp1.1\FibonacciProject.Tests.dll" />
+    <Content Include="FibonacciProject.Tests\bin\Debug\netcoreapp1.1\FibonacciProject.Tests.pdb" />
+    <Content Include="FibonacciProject.Tests\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll" />
+    <Content Include="FibonacciProject.Tests\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll" />
+    <Content Include="FibonacciProject.Tests\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll" />
+    <Content Include="FibonacciProject.Tests\FibonacciProject.Tests.csproj" />
+    <Content Include="FibonacciProject.Tests\obj\Debug\netcoreapp1.1\FibonacciProject.Tests.csproj.FileListAbsolute.txt" />
+    <Content Include="FibonacciProject.Tests\obj\Debug\netcoreapp1.1\FibonacciProject.Tests.dll" />
+    <Content Include="FibonacciProject.Tests\obj\Debug\netcoreapp1.1\FibonacciProject.Tests.pdb" />
+    <Content Include="FibonacciProject\bin\Debug\netcoreapp1.1\FibonacciProject.dll" />
+    <Content Include="FibonacciProject\bin\Debug\netcoreapp1.1\FibonacciProject.pdb" />
+    <Content Include="FibonacciProject\FibonacciProject.csproj" />
+    <Content Include="FibonacciProject\obj\Debug\netcoreapp1.1\FibonacciProject.csproj.FileListAbsolute.txt" />
+    <Content Include="FibonacciProject\obj\Debug\netcoreapp1.1\FibonacciProject.dll" />
+    <Content Include="FibonacciProject\obj\Debug\netcoreapp1.1\FibonacciProject.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FibonacciProject.Tests\FibonacciUnitTests.cs" />
+    <Compile Include="FibonacciProject.Tests\obj\Debug\netcoreapp1.1\FibonacciProject.Tests.AssemblyInfo.cs" />
+    <Compile Include="FibonacciProject.Tests\obj\Debug\netcoreapp1.1\FibonacciProject.Tests.Program.cs" />
+    <Compile Include="FibonacciProject.Tests\obj\Debug\netcoreapp1.1\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="FibonacciProject.Tests\obj\Debug\netcoreapp1.1\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="FibonacciProject.Tests\obj\Debug\netcoreapp1.1\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="FibonacciProject\Fibonacci.cs" />
+    <Compile Include="FibonacciProject\obj\Debug\netcoreapp1.1\FibonacciProject.AssemblyInfo.cs" />
+    <Compile Include="FibonacciProject\obj\Debug\netcoreapp1.1\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="FibonacciProject\obj\Debug\netcoreapp1.1\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="FibonacciProject\obj\Debug\netcoreapp1.1\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
