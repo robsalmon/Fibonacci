@@ -57,5 +57,18 @@ namespace FibonacciTests
             //assert
             Assert.Equal(2, result);
         }
+
+        [Fact]
+        public void Fib_Given4_Return3()
+        {
+            //arrange
+            int n = 4;
+
+            //act
+            int result = Fibonacci.Fib(n);
+
+            //assert
+            Assert.Equal(3, result);
+        }
     }
 }
