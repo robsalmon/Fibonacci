@@ -1,4 +1,5 @@
-﻿# Project Title
+﻿# Fibonacci
+Creates and prints the Fibonacci numbers
 
 
 
